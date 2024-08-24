@@ -20,12 +20,17 @@
   xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <symbol
+      id="icon-search"
+      viewBox="0 0 30 32">
+      <path
+        fill="#956d84"
+        style="fill: var(--color1, #956d84)"
+        d="M28.811 30.116l-8.421-8.421c1.597-1.972 2.559-4.479 2.559-7.208 0-6.327-5.148-11.475-11.475-11.475s-11.475 5.148-11.475 11.475c0 6.327 5.148 11.475 11.475 11.475 2.729 0 5.236-0.962 7.208-2.559l8.421 8.421c0.236 0.236 0.618 0.236 0.854 0l0.854-0.854c0.236-0.236 0.236-0.618 0-0.854zM11.475 23.545c-4.995 0-9.059-4.064-9.059-9.059s4.064-9.059 9.059-9.059c4.995 0 9.059 4.063 9.059 9.059s-4.064 9.059-9.059 9.059z"></path>
+    </symbol>
+    <symbol
       id="arrow-header-down"
       viewBox="0 0 75 32">
-      <path
-        fill="#fff"
-        style="fill: var(--color1, #fff)"
-        d="M37.333 32l-32.332-32h64.663l-32.332 32z"></path>
+      <path d="M37.333 32l-32.332-32h64.663l-32.332 32z"></path>
     </symbol>
     <symbol
       id="icon-link"
@@ -313,7 +318,7 @@
   <body>
     <header class="header">
   <div class="header__wrapper-top">
-    <div class="header__container container">
+    <div class="header__container_top container">
       <nav class="nav-top">
         <ul class="header__list-top">
           <li class="header__item-top">
@@ -438,6 +443,72 @@
         <button class="header__exit-btn-registration">
           <p>Реєстрація</p>
         </button>
+      </div>
+    </div>
+  </div>
+  <!-- ------- -->
+  <div class="header__wrapper-bottom">
+    <div class="header__container_bottom container">
+      <div class="header__logo">
+        <a href="#">
+          <img
+            width="129"
+            height="155"
+            class="header__logo-img"
+            src="/Flowers/assets/logo-CnG_RHLO.png"
+            alt="logo" />
+        </a>
+      </div>
+
+      <div class="header__nav-bottom-box nav-bottom-box">
+        <div class="nav-bottom-box__top">
+          <div class="header__search-category search-category">
+            <div class="search-category__title-box js-search-category-title-box">
+              <svg class="search-category__arrow-icon">
+                <use xlink:href="#arrow-header-down"></use>
+              </svg>
+
+              <p class="search-category__title">Пошук за категоріями</p>
+            </div>
+
+            <ul class="search-category__list js-search-category-list">
+              <li class="search-category__list-item">Букети</li>
+              <li class="search-category__list-item">Букети</li>
+              <li class="search-category__list-item">Букети</li>
+              <li class="search-category__list-item">Букети</li>
+              <li class="search-category__list-item">Букети</li>
+              <li class="search-category__list-item">Букети</li>
+              <li class="search-category__list-item">Букети</li>
+              <li class="search-category__list-item">Букети</li>
+              <li class="search-category__list-item">Букети</li>
+              <li class="search-category__list-item">Букети</li>
+            </ul>
+          </div>
+
+          <!-- ----- -->
+
+          <div class="header__search-input-wrapp">
+            <input
+              type="text"
+              class="header__search-input"
+              placeholder="Пошук по товарах" />
+
+            <button
+              class="header__search-btn"
+              type="button">
+              <svg
+                width="19"
+                height="19"
+                class="search__icon">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ----- -->
+
+        <div class="nav-bottom-box__bottom"></div>
       </div>
     </div>
   </div>
