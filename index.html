@@ -15,6 +15,26 @@
   xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <symbol
+      id="three-arrows"
+      viewBox="0 0 45 32">
+      <path
+        fill="#956d84"
+        style="fill: var(--color1, #956d84)"
+        opacity="0.4"
+        d="M10.611 9.768l-1.516 1.347 4.716 4.884-4.716 4.884 1.516 1.516 6.232-6.4z"></path>
+      <path
+        fill="#956d84"
+        style="fill: var(--color1, #956d84)"
+        opacity="0.7"
+        d="M20.716 9.768l-1.516 1.347 4.716 4.884-4.716 4.884 1.347 1.516 6.4-6.4z"></path>
+      <path
+        fill="#956d84"
+        style="fill: var(--color1, #956d84)"
+        opacity="0.9"
+        d="M30.821 9.6l-1.516 1.516 4.716 4.884-4.884 4.884 1.516 1.347 6.4-6.232z"></path>
+    </symbol>
+
+    <symbol
       id="icon-slider-btn-next"
       viewBox="0 0 18 32">
       <path
@@ -312,7 +332,7 @@
     <script type="module" crossorigin src="/Flowers/js/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Flowers/assets/vendor-ANkZcBYd.js">
     <link rel="stylesheet" crossorigin href="/Flowers/assets/vendor-BGkeTIC1.css">
-    <link rel="stylesheet" crossorigin href="/Flowers/assets/index-9D1COVrT.css">
+    <link rel="stylesheet" crossorigin href="/Flowers/assets/index-D5GYRcg2.css">
   </head>
 
   <body>
@@ -1489,102 +1509,123 @@
     <h2 class="main__title main__title-forum">Форум</h2>
 
     <!--/ слайдер -->
-    <div class="swiper forum-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="main__slide-forum">
-            <div class="main__slide-forum-picture-wrapper">
-              <div class="main__slide-forum-img-wrapper">
-                <div class="main__slide-forum-img-overlay"></div>
-                <picture class="main__slide-forum-picture">
-                  <source
-                    srcset="/Flowers/assets/girl-with-bouquet-lwRI0mXB.webp"
-                    type="image/webp" />
-
-                  <img
-                    class="main__slide-forum-img"
-                    width="412"
-                    height="343"
-                    loading="lazy"
-                    src="/Flowers/assets/girl-with-bouquet-BoXz7xop.png"
-                    alt="girl-with-bouquet" />
-                </picture>
-              </div>
-            </div>
-
-            <div class="main__slide-forum-text">
-              <p class="main__slide-forum-title">Які квіти під забороною: що не можна дарувати</p>
-
-              <p class="main__slide-forum-description">
-                Осведомленности в сфере новых трендов цветочного дизайна и знакомства с работами...
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="main__slide-forum">
-            <div class="main__slide-forum-picture-wrapper">
-              <div class="main__slide-forum-img-wrapper">
-                <div class="main__slide-forum-img-overlay"></div>
-                <picture class="main__slide-forum-picture">
-                  <source
-                    srcset="/Flowers/assets/101-red-roses-gaQ13RDc.webp"
-                    type="image/webp" />
-
-                  <img
-                    class="main__slide-forum-img"
-                    width="412"
-                    height="343"
-                    loading="lazy"
-                    src="/Flowers/assets/101-red-roses-HF7rWNc7.png"
-                    alt="girl-with-bouquet" />
-                </picture>
-              </div>
-            </div>
-
-            <div class="main__slide-forum-text">
-              <p class="main__slide-forum-title">Які квіти під забороною: що не можна дарувати</p>
-
-              <p class="main__slide-forum-description">
-                Осведомленности в сфере новых трендов цветочного дизайна и знакомства с работами...
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="main__slide-forum">
-            <div class="main__slide-forum-picture-wrapper">
-              <div class="main__slide-forum-img-wrapper">
-                <div class="main__slide-forum-img-overlay"></div>
-                <picture class="main__slide-forum-picture">
-                  <source
-                    srcset="/Flowers/assets/guy-with-bouquet-DumTHt8e.webp"
-                    type="image/webp" />
-
-                  <img
-                    class="main__slide-forum-img"
-                    width="412"
-                    height="343"
-                    loading="lazy"
-                    src="/Flowers/assets/guy-with-bouquet-s2PctBeT.png"
-                    alt="girl-with-bouquet" />
-                </picture>
-              </div>
-            </div>
-
-            <div class="main__slide-forum-text">
-              <p class="main__slide-forum-title">Які квіти під забороною: що не можна дарувати</p>
-
-              <p class="main__slide-forum-description">
-                Осведомленности в сфере новых трендов цветочного дизайна и знакомства с работами...
-              </p>
-            </div>
-          </div>
-        </div>
+    <div class="main__forum-swiper-wrapper">
+      <!-- btns -->
+      <div class="main__forum-swiper-btn">
+        <a
+          class="main__forum-swiper-btn-news"
+          href="#"
+          target="_blank">
+          <p>Усі новини</p>
+          <svg
+            class="main__forum-swiper-btn-icon"
+            width="50"
+            height="15">
+            <use xlink:href="#three-arrows"></use>
+          </svg>
+        </a>
       </div>
-      <div class="swiper-pagination"></div>
+
+      <div class="swiper forum-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="main__slide-forum">
+              <div class="main__slide-forum-picture-wrapper">
+                <div class="main__slide-forum-img-wrapper">
+                  <div class="main__slide-forum-img-overlay"></div>
+                  <picture class="main__slide-forum-picture">
+                    <source
+                      srcset="/Flowers/assets/girl-with-bouquet-lwRI0mXB.webp"
+                      type="image/webp" />
+
+                    <img
+                      class="main__slide-forum-img"
+                      width="412"
+                      height="343"
+                      loading="lazy"
+                      src="/Flowers/assets/girl-with-bouquet-BoXz7xop.png"
+                      alt="girl-with-bouquet" />
+                  </picture>
+                </div>
+              </div>
+
+              <div class="main__slide-forum-text">
+                <p class="main__slide-forum-title">Які квіти під забороною: що не можна дарувати</p>
+
+                <p class="main__slide-forum-description">
+                  Осведомленности в сфере новых трендов цветочного дизайна и знакомства с
+                  работами...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="main__slide-forum">
+              <div class="main__slide-forum-picture-wrapper">
+                <div class="main__slide-forum-img-wrapper">
+                  <div class="main__slide-forum-img-overlay"></div>
+                  <picture class="main__slide-forum-picture">
+                    <source
+                      srcset="/Flowers/assets/101-red-roses-gaQ13RDc.webp"
+                      type="image/webp" />
+
+                    <img
+                      class="main__slide-forum-img"
+                      width="412"
+                      height="343"
+                      loading="lazy"
+                      src="/Flowers/assets/101-red-roses-HF7rWNc7.png"
+                      alt="girl-with-bouquet" />
+                  </picture>
+                </div>
+              </div>
+
+              <div class="main__slide-forum-text">
+                <p class="main__slide-forum-title">Які квіти під забороною: що не можна дарувати</p>
+
+                <p class="main__slide-forum-description">
+                  Осведомленности в сфере новых трендов цветочного дизайна и знакомства с
+                  работами...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="main__slide-forum">
+              <div class="main__slide-forum-picture-wrapper">
+                <div class="main__slide-forum-img-wrapper">
+                  <div class="main__slide-forum-img-overlay"></div>
+                  <picture class="main__slide-forum-picture">
+                    <source
+                      srcset="/Flowers/assets/guy-with-bouquet-DumTHt8e.webp"
+                      type="image/webp" />
+
+                    <img
+                      class="main__slide-forum-img"
+                      width="412"
+                      height="343"
+                      loading="lazy"
+                      src="/Flowers/assets/guy-with-bouquet-s2PctBeT.png"
+                      alt="girl-with-bouquet" />
+                  </picture>
+                </div>
+              </div>
+
+              <div class="main__slide-forum-text">
+                <p class="main__slide-forum-title">Які квіти під забороною: що не можна дарувати</p>
+
+                <p class="main__slide-forum-description">
+                  Осведомленности в сфере новых трендов цветочного дизайна и знакомства с
+                  работами...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </div>
 </section>
