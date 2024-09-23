@@ -113,7 +113,7 @@ import{S as _,P as B,A as I,G as H,N as M,g as L,a as k,c as S,i as A}from"../as
                   <div class="main__slide-forum-img-overlay"></div>
                   <picture class="main__slide-forum-picture">
                     <source
-                      srcset=${c?`${c}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.png?alt=media&token=69e0e0b2-fd05-421a-a13e-ce96a894acc6"}
+                      srcset=${c?`${c}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.webp?alt=media&token=89f10487-08e7-491f-8448-5998d2423abc"}
                       type="image/webp" />
 
                     <img
