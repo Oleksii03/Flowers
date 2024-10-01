@@ -1,5 +1,5 @@
-import{h as k,m as S,c as y}from"../assets/accordion-BA6URqia.js";import{S as g,P as j,A as E,G as x,N as L,g as v,a as b,c as h,i as $}from"../assets/vendor-ANkZcBYd.js";g.use([j,E,x,L]);function q(){return new g(".mainHeroSwiper",{autoplay:{delay:2e3,disableOnInteraction:!0},pagination:{el:".swiper-pagination"},speed:600})}function P(){const e=new g(".stock-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".stock__swiper-button-next",prevEl:".stock__swiper-button-prev"}});u(e),window.addEventListener("resize",()=>u(e))}function F(){const e=new g(".seasona-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".seasona__swiper-button-next",prevEl:".seasona__swiper-button-prev"}});u(e),window.addEventListener("resize",()=>u(e))}function I(){const e=new g(".present-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".present__swiper-button-next",prevEl:".present__swiper-button-prev"}});u(e),window.addEventListener("resize",()=>u(e))}function A(){return new g(".forum-swiper",{slidesPerView:"auto",spaceBetween:20,pagination:{el:".swiper-pagination"},speed:600})}function u(e){window.innerWidth<=425?(e.params.slidesPerView=2,e.params.spaceBetween=9):window.innerWidth>=1024?(e.params.spaceBetween=20,e.params.slidesPerView=4):e.params.slidesPerView="auto",e.update()}function O(e,s){const c=e.map(({id:o,discount:t,price:a,img:{png:n,webp:p},title:l})=>`
-          <div class="swiper-slide js-main-swiper-slide" data-id="${o}">
+import{K as w,u as m,a as f,h as j,m as E,c as L}from"../assets/update-local-storage-counter-CAwkdD6p.js";import{S as d,P as x,A as $,G as P,N as q,g as h,a as k,c as S,i as F}from"../assets/vendor-ANkZcBYd.js";d.use([x,$,P,q]);function I(){return new d(".mainHeroSwiper",{autoplay:{delay:2e3,disableOnInteraction:!0},pagination:{el:".swiper-pagination"},speed:600})}function A(){const e=new d(".stock-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".stock__swiper-button-next",prevEl:".stock__swiper-button-prev"}});l(e),window.addEventListener("resize",()=>l(e))}function C(){const e=new d(".seasona-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".seasona__swiper-button-next",prevEl:".seasona__swiper-button-prev"}});l(e),window.addEventListener("resize",()=>l(e))}function O(){const e=new d(".present-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".present__swiper-button-next",prevEl:".present__swiper-button-prev"}});l(e),window.addEventListener("resize",()=>l(e))}function B(){return new d(".forum-swiper",{slidesPerView:"auto",spaceBetween:20,pagination:{el:".swiper-pagination"},speed:600})}function l(e){window.innerWidth<=425?(e.params.slidesPerView=2,e.params.spaceBetween=9):window.innerWidth>=1024?(e.params.spaceBetween=20,e.params.slidesPerView=4):e.params.slidesPerView="auto",e.update()}function N(e,t){const c=e.map(({id:a,discount:o,price:s,img:{png:i,webp:n},title:r})=>`
+          <div class="swiper-slide js-main-swiper-slide" data-id="${a}">
             <div class="main__slide-stock slide-stock">
               <div class="slide-stock__content-top">
                 <svg
@@ -9,19 +9,19 @@ import{h as k,m as S,c as y}from"../assets/accordion-BA6URqia.js";import{S as g,
                   <use xlink:href="#icon-heart"></use>
                 </svg>
 
-                ${t?`<div class="slide-stock__content-top-discount">-${t}%</div>`:""}
+                ${o?`<div class="slide-stock__content-top-discount">-${o}%</div>`:""}
              
                   <picture>
                     <source 
-                      srcset=${p?`${p}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.webp?alt=media&token=76b2ee6e-35c7-4f93-855a-01e009d82bea"} type="image/webp" />
+                      srcset=${n?`${n}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.webp?alt=media&token=76b2ee6e-35c7-4f93-855a-01e009d82bea"} type="image/webp" />
 
                     <img 
                      loading="lazy"
                      width="450"
                      height="450"
                      class="slide-stock__content-top-img js-main-swiper-slide-img"
-                     src=${n?`${n}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.png?alt=media&token=f6fac92f-15df-4da5-a695-b57533957121"} alt="${l}"
-                     data-src="${p}" />
+                     src=${i?`${i}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.png?alt=media&token=f6fac92f-15df-4da5-a695-b57533957121"} alt="${r}"
+                     data-src="${n}" />
                   </picture>
 
                 <div class="slide-stock__content-top-logo">TOP</div>
@@ -74,18 +74,18 @@ import{h as k,m as S,c as y}from"../assets/accordion-BA6URqia.js";import{S as g,
                 </ul>
 
                 <div class="slide-stock__content-bottom-price-box">
-                  <h5 class="slide-stock__content-bottom-title js-main-swiper-slide-title" title="${l}">
-                    <span></span> ${l}
+                  <h5 class="slide-stock__content-bottom-title js-main-swiper-slide-title" title="${r}">
+                    <span></span> ${r}
                   </h5>
 
                   <div class="slide-stock__content-bottom-price">
 
-                    ${t?`<div class="slide-stock__content-bottom-price-old js-main-swiper-slide-price-old"><span>${a}</span> грн</div>`:""}
+                    ${o?`<div class="slide-stock__content-bottom-price-old js-main-swiper-slide-price-old"><span>${s}</span> грн</div>`:""}
                     
                     <div class="slide-stock__content-bottom-price-new   
                       js-main-swiper-slide-price-new" 
-                      data-discount="${t}">
-                      ${a*(1-t/100).toFixed(1)} грн
+                      data-discount="${o}">
+                      ${s*(1-o/100).toFixed(1)} грн
                     </div>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ import{h as k,m as S,c as y}from"../assets/accordion-BA6URqia.js";import{S as g,
                 </div>
               </div>
             </div>
-          </div>`);s.innerHTML=c.join("")}function C(e){const s=document.querySelector(".js-main-swiper-stock"),c=document.querySelector(".js-main-swiper-seasonal"),o=document.querySelector(".js-main-swiper-present"),t=["Stock","Seasonal","Present"],a=[s,c,o],n=v(e);async function p(l="",f=""){try{const d=await b(h(n,l)),i=[];d.forEach(r=>{i.push({id:r.id,...r.data()})}),O(i,f)}catch(d){return console.error("Error getting documents:",d),[]}}for(let l=0;l<t.length;l++){const f=t[l],d=a[l];p(f,d)}}function B(){const e=document.querySelector(".js-preloader");s();function s(){if(!localStorage.getItem("is-visit")){c();return}e.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze")}function c(){e.classList.add("preloader_visible"),document.body.classList.add("to-freeze"),setTimeout(()=>{e.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze"),localStorage.setItem("is-visit","true")},4e3)}}function N(){return $({apiKey:"AIzaSyCeoo8r7oEqKQs1O_YxVO2RAd8WWV3HWso",authDomain:"flowers-4b1a5.firebaseapp.com",projectId:"flowers-4b1a5",storageBucket:"flowers-4b1a5.appspot.com",messagingSenderId:"719757325067",appId:"1:719757325067:web:6e609ba7f0d37bdd23e80e"})}function V(e){const s=document.querySelector(".js-main-swiper-forum"),c=e.map(({title:o,description:t,img:{png:a,webp:n}})=>`
+          </div>`);t.innerHTML=c.join("")}function V(e){const t=document.querySelector(".js-main-swiper-stock"),c=document.querySelector(".js-main-swiper-seasonal"),a=document.querySelector(".js-main-swiper-present"),o=["Stock","Seasonal","Present"],s=[t,c,a],i=h(e);async function n(r="",g=""){try{const p=await k(S(i,r)),_=[];p.forEach(v=>{_.push({id:v.id,...v.data()})}),N(_,g)}catch(p){return console.error("Error getting documents:",p),[]}}for(let r=0;r<o.length;r++){const g=o[r],p=s[r];n(g,p)}}function z(){const e=document.querySelector(".js-preloader");t();function t(){if(!localStorage.getItem("is-visit")){c();return}e.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze")}function c(){e.classList.add("preloader_visible"),document.body.classList.add("to-freeze"),setTimeout(()=>{e.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze"),localStorage.setItem("is-visit","true")},4e3)}}function T(){return F({apiKey:"AIzaSyCeoo8r7oEqKQs1O_YxVO2RAd8WWV3HWso",authDomain:"flowers-4b1a5.firebaseapp.com",projectId:"flowers-4b1a5",storageBucket:"flowers-4b1a5.appspot.com",messagingSenderId:"719757325067",appId:"1:719757325067:web:6e609ba7f0d37bdd23e80e"})}function D(e){const t=document.querySelector(".js-main-swiper-forum"),c=e.map(({title:a,description:o,img:{png:s,webp:i}})=>`
       <div class="swiper-slide">
             <div class="main__slide-forum">
               <div class="main__slide-forum-picture-wrapper">
@@ -119,7 +119,7 @@ import{h as k,m as S,c as y}from"../assets/accordion-BA6URqia.js";import{S as g,
                   <div class="main__slide-forum-img-overlay"></div>
                   <picture class="main__slide-forum-picture">
                     <source
-                      srcset=${n?`${n}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.webp?alt=media&token=89f10487-08e7-491f-8448-5998d2423abc"}
+                      srcset=${i?`${i}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.webp?alt=media&token=89f10487-08e7-491f-8448-5998d2423abc"}
                       type="image/webp" />
 
                     <img
@@ -127,17 +127,17 @@ import{h as k,m as S,c as y}from"../assets/accordion-BA6URqia.js";import{S as g,
                       width="412"
                       height="343"
                       loading="lazy"
-                      src=${a?`${a}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.png?alt=media&token=69e0e0b2-fd05-421a-a13e-ce96a894acc6"}
-                      alt="${o}" />
+                      src=${s?`${s}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.png?alt=media&token=69e0e0b2-fd05-421a-a13e-ce96a894acc6"}
+                      alt="${a}" />
                   </picture>
                 </div>
               </div>
 
               <div class="main__slide-forum-text">
-                <p class="main__slide-forum-title">${o}</p>
+                <p class="main__slide-forum-title">${a}</p>
 
-                <p class="main__slide-forum-description">${t}</p>
+                <p class="main__slide-forum-description">${o}</p>
               </div>
             </div>
-          </div>`);s.innerHTML=c.join("")}function z(e){const s=v(e);async function c(){try{const o=await b(h(s,"main-forum")),t=[];o.forEach(a=>{t.push({id:a.id,...a.data()})}),V(t)}catch(o){return console.error("Error getting documents:",o),[]}}c()}function _(e){const s=e.closest(".js-main-swiper-slide"),c=s.querySelector(".js-main-swiper-slide-title").textContent.trim(),o=s.querySelector(".js-main-swiper-slide-img").src,t=s.querySelector(".js-main-swiper-slide-img").dataset.src,a=s.querySelector(".js-main-swiper-slide-price-old")?s.querySelector(".js-main-swiper-slide-price-old").textContent.trim():0,n=s.querySelector(".js-main-swiper-slide-price-new").textContent.trim(),p=s.querySelector(".js-main-swiper-slide-price-new").dataset.discount;return{id:s.dataset.id,title:c,img:{png:o||"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.png?alt=media&token=f6fac92f-15df-4da5-a695-b57533957121",webp:t||"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.webp?alt=media&token=76b2ee6e-35c7-4f93-855a-01e009d82bea"},price:parseInt(n),oldPrice:parseInt(a),discount:Number(p)}}function T(){const e=document.querySelector(".js-main-container"),s=document.querySelectorAll(".js-favorite-amount"),c=document.querySelectorAll(".js-basket-amount"),o="basket",t="favorite",a=JSON.parse(localStorage.getItem(o))??[];let n=JSON.parse(localStorage.getItem(t))??[];e.addEventListener("click",p);function p({target:i}){i.classList.contains("js-basket")&&l(i),(i.classList.contains("js-favorite")||i.tagName==="use")&&f(i)}function l(i){const r=_(i);a.some(({id:w})=>w===r.id)||(a.push(r),localStorage.setItem(o,JSON.stringify(a)),d(o,c))}function f(i){let r=i.closest(".js-favorite");if(r)if(r.classList.contains("slide-stock__content-top-favorite_active")){r.classList.remove("slide-stock__content-top-favorite_active");const m=r.closest(".js-main-swiper-slide").dataset.id;n=n.filter(({id:w})=>w!==m),localStorage.setItem(t,JSON.stringify(n)),d(t,s)}else{r.classList.add("slide-stock__content-top-favorite_active");const m=_(i);n.push(m),localStorage.setItem(t,JSON.stringify(n)),d(t,s)}}function d(i,r){const m=JSON.parse(localStorage.getItem(i))?JSON.parse(localStorage.getItem(i)).length:0;[...r].forEach(w=>{console.log(w.textContent=m)})}d(t,s),d(o,c),addEventListener("load",()=>{const i=document.querySelectorAll(".js-main-swiper-slide");n.forEach(({id:r})=>{[...i].forEach(m=>{m.dataset.id===r&&m.querySelector(".js-favorite").classList.add("slide-stock__content-top-favorite_active")})})})}document.addEventListener("DOMContentLoaded",()=>{let e=N();k(),S(),q(),C(e),P(),B(),F(),I(),A(),z(e),y(),T()});
+          </div>`);t.innerHTML=c.join("")}function J(e){const t=h(e);async function c(){try{const a=await k(S(t,"main-forum")),o=[];a.forEach(s=>{o.push({id:s.id,...s.data()})}),D(o)}catch(a){return console.error("Error getting documents:",a),[]}}c()}function b(e){const t=e.closest(".js-main-swiper-slide"),c=t.querySelector(".js-main-swiper-slide-title").textContent.trim(),a=t.querySelector(".js-main-swiper-slide-img").src,o=t.querySelector(".js-main-swiper-slide-img").dataset.src,s=t.querySelector(".js-main-swiper-slide-price-old")?t.querySelector(".js-main-swiper-slide-price-old").textContent.trim():0,i=t.querySelector(".js-main-swiper-slide-price-new").textContent.trim(),n=t.querySelector(".js-main-swiper-slide-price-new").dataset.discount;return{id:t.dataset.id,title:c,img:{png:a||"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.png?alt=media&token=f6fac92f-15df-4da5-a695-b57533957121",webp:o||"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.webp?alt=media&token=76b2ee6e-35c7-4f93-855a-01e009d82bea"},price:parseInt(i),oldPrice:parseInt(s),discount:Number(n)}}let u=JSON.parse(localStorage.getItem(w))??[];function y(){const e=document.querySelector(".js-main-container");let t=JSON.parse(localStorage.getItem(f))??[];e.addEventListener("click",c);function c({target:s}){s.classList.contains("js-basket")&&a(s),(s.classList.contains("js-favorite")||s.tagName==="use")&&o(s)}function a(s){const i=b(s);u.some(({id:r})=>r===i.id)||(u.push(i),localStorage.setItem(w,JSON.stringify(u)),m())}function o(s){let i=s.closest(".js-favorite");if(i)if(i.classList.contains("slide-stock__content-top-favorite_active")){i.classList.remove("slide-stock__content-top-favorite_active");const n=i.closest(".js-main-swiper-slide").dataset.id;t=t.filter(({id:r})=>r!==n),localStorage.setItem(f,JSON.stringify(t)),m()}else{i.classList.add("slide-stock__content-top-favorite_active");const n=b(s);t.push(n),localStorage.setItem(f,JSON.stringify(t)),m()}}m(),addEventListener("load",()=>{const s=document.querySelectorAll(".js-main-swiper-slide");t.forEach(({id:i})=>{[...s].forEach(n=>{n.dataset.id===i&&n.querySelector(".js-favorite").classList.add("slide-stock__content-top-favorite_active")})})})}window.addEventListener("storage",()=>{u=JSON.parse(localStorage.getItem(w))??[],m(),y()});document.addEventListener("DOMContentLoaded",()=>{let e=T();j(),E(),I(),V(e),A(),z(),C(),O(),B(),J(e),L(),y()});
 //# sourceMappingURL=index.js.map
