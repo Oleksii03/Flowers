@@ -1,8 +1,8 @@
-import{K as k,u as h,h as x,m as C,c as $}from"../../assets/update-local-storage-counter-CAwkdD6p.js";function q(r){return r.map((o,l)=>{const{id:c,discount:m,price:s,oldPrice:d,title:g,img:{png:p,webp:_}}=o;return`
+import{K as k,u as h,h as C,m as $,c as q}from"../../assets/update-local-storage-counter-CAwkdD6p.js";function w(r){return r.map((o,l)=>{const{id:c,discount:b,price:s,oldPrice:d,title:g,img:{png:p,webp:m}}=o;return`
       <li class="basket-main__list-item" data-id="${c}">
           <picture class="basket-main__list-picture">
             <source
-              srcset="${_}"
+              srcset="${m}"
               type="image/webp" />
             <img
               class="basket-main__list-img"
@@ -17,7 +17,7 @@ import{K as k,u as h,h as x,m as C,c as $}from"../../assets/update-local-storage
 
             <div class="basket-main__list-price-piece">
               <p class="basket-main__list-price-piece_new">${s} <span>₴</span></p>
-              ${m?`<p class="basket-main__list-price-piece_old js-old-price" data-old-price="${d}">${d} <span>₴</span></p>`:""}
+              ${b?`<p class="basket-main__list-price-piece_old js-old-price" data-old-price="${d}">${d} <span>₴</span></p>`:""}
             </div>
 
             <div class="basket-main__list-amount-box">
@@ -61,7 +61,7 @@ import{K as k,u as h,h as x,m as C,c as $}from"../../assets/update-local-storage
             ${s}<span> ₴</span>
             </p>
           </div>
-        </li>`})}function y(){return`
+        </li>`})}function v(){return`
       <li
         class="basket-main__list-item_empty-basket list-item__empty-basket js-empty-basket-item">
         <h3 class="list-item__empty-basket-title">
@@ -73,5 +73,5 @@ import{K as k,u as h,h as x,m as C,c as $}from"../../assets/update-local-storage
           height="500"
           src="https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fempty-shopping-cart.webp?alt=media&token=3c262b31-1194-4d5e-9cc7-4c1f827f99a0"
           alt="#" />
-      </li>`}function w(){const r=document.querySelector(".js-basket-card-list"),o=document.querySelector(".js-title-shopping-list"),l=document.querySelector(".js-order-total-price"),c=document.querySelector(".js-goods-price"),m=document.querySelector(".js-discount-price");let s=JSON.parse(localStorage.getItem(k))??[];function d(t){t.length?(r.innerHTML=q(t).join(""),o.style.display="flex"):(r.innerHTML=y(),o.style.display="none")}d(s),r.addEventListener("click",g);function g({target:t,type:e}){t.classList.contains("js-remove-card")&&S(t),t.closest(".js-basket-btn-increment")?v(t):t.closest(".js-basket-btn-decrement")&&j(t)}function p(t){let e=0,n=0;t.forEach(i=>{e+=i.oldPrice,n+=i.price}),l.textContent=`${n} ₴`,c.textContent=`${e} ₴`,m.textContent=`${e-n} ₴`}p(s);let _=parseInt(l.textContent);parseInt(m.textContent);let f=parseInt(c.textContent);function v(t){const e=t.closest(".basket-main__list-item");let n=e.querySelector(".js-basket-amount"),i=e.querySelector(".js-current-price"),b=e.querySelector(".js-old-price")?e.querySelector(".js-old-price").dataset.oldPrice:+i.dataset.price;console.log(b);let a=+n.textContent;const u=+i.dataset.price;a>=10||(n.textContent=a+=1,i.textContent=`${u*a} ₴`,l.textContent=`${_+=u} ₴`,c.textContent=`${f+=Number(b)} ₴`)}function j(t){const e=t.closest(".basket-main__list-item");let n=e.querySelector(".js-basket-amount"),i=e.querySelector(".js-current-price"),b=e.querySelector(".js-old-price")?e.querySelector(".js-old-price").dataset.oldPrice:+i.dataset.price,a=+n.textContent;const u=+i.dataset.price;a<=1||(n.textContent=a-=1,i.textContent=`${u*a} ₴`,l.textContent=`${_-=u} ₴`,c.textContent=`${f-=Number(b)} ₴`)}function S(t){const e=t.closest(".basket-main__list-item"),n=e.dataset.id;e.remove(),s=s.filter(({id:i})=>i!==n),localStorage.setItem(k,JSON.stringify(s)),h(),p(s),s.length||(r.innerHTML=y(),o.style.display="none")}window.addEventListener("storage",()=>{s=JSON.parse(localStorage.getItem(k))??[],h(),d(s),p(s)})}document.addEventListener("DOMContentLoaded",()=>{x(),C(),$(),w(),h()});
+      </li>`}function L(){const r=document.querySelector(".js-basket-card-list"),o=document.querySelector(".js-title-shopping-list"),l=document.querySelector(".js-order-total-price"),c=document.querySelector(".js-goods-price"),b=document.querySelector(".js-discount-price");let s=JSON.parse(localStorage.getItem(k))??[];function d(t){t.length?(r.innerHTML=w(t).join(""),o.style.display="flex"):(r.innerHTML=v(),o.style.display="none")}d(s),r.addEventListener("click",g);function g({target:t,type:e}){t.classList.contains("js-remove-card")&&x(t),t.closest(".js-basket-btn-increment")?S(t):t.closest(".js-basket-btn-decrement")&&j(t)}function p(t){let e=0,n=0;t.forEach(i=>{e+=i.oldPrice,n+=i.price}),l.textContent=`${n} ₴`,c.textContent=`${e} ₴`,b.textContent=`${e-n} ₴`}p(s);let m=parseInt(l.textContent),f=parseInt(c.textContent);function S(t){const e=t.closest(".basket-main__list-item");let n=e.querySelector(".js-basket-amount"),i=e.querySelector(".js-current-price"),_=e.querySelector(".js-old-price")?e.querySelector(".js-old-price").dataset.oldPrice:+i.dataset.price;console.log(_);let a=+n.textContent;const u=+i.dataset.price;a>=10||(n.textContent=a+=1,i.textContent=`${u*a} ₴`,l.textContent=`${m+=u} ₴`,c.textContent=`${f+=Number(_)} ₴`)}function j(t){const e=t.closest(".basket-main__list-item");let n=e.querySelector(".js-basket-amount"),i=e.querySelector(".js-current-price"),_=e.querySelector(".js-old-price")?e.querySelector(".js-old-price").dataset.oldPrice:+i.dataset.price,a=+n.textContent;const u=+i.dataset.price;a<=1||(n.textContent=a-=1,i.textContent=`${u*a} ₴`,l.textContent=`${m-=u} ₴`,c.textContent=`${f-=Number(_)} ₴`)}function x(t){const e=t.closest(".basket-main__list-item"),n=e.dataset.id;e.remove(),s=s.filter(({id:i})=>i!==n),localStorage.setItem(k,JSON.stringify(s)),h(),p(s),y(),s.length||(r.innerHTML=v(),o.style.display="none")}window.addEventListener("storage",y);function y(){s=JSON.parse(localStorage.getItem(k))??[],h(),d(s),p(s)}}document.addEventListener("DOMContentLoaded",()=>{C(),$(),q(),L(),h()});
 //# sourceMappingURL=basket.js.map
