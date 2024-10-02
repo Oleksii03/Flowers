@@ -1,23 +1,23 @@
-import{K as g,u as k,h as x,m as C,c as S}from"../../assets/update-local-storage-counter-CAwkdD6p.js";function j(r){return r.map((o,a)=>{const{id:d,discount:_,price:e,oldPrice:p,title:b,img:{png:l,webp:u}}=o;return`
-      <li class="basket-main__list-item" data-id="${d}">
+import{K as k,u as h,h as x,m as C,c as $}from"../../assets/update-local-storage-counter-CAwkdD6p.js";function q(r){return r.map((o,l)=>{const{id:c,discount:m,price:s,oldPrice:d,title:g,img:{png:p,webp:_}}=o;return`
+      <li class="basket-main__list-item" data-id="${c}">
           <picture class="basket-main__list-picture">
             <source
-              srcset="${u}"
+              srcset="${_}"
               type="image/webp" />
             <img
               class="basket-main__list-img"
               width="83"
               height="104"
-              src="${l}"
+              src="${p}"
               alt="#" />
           </picture>
 
           <div class="basket-main__list-info">
-            <h3 class="basket-main__list-title">${b}</h3>
+            <h3 class="basket-main__list-title">${g}</h3>
 
             <div class="basket-main__list-price-piece">
-              <p class="basket-main__list-price-piece_new">${e} <span>₴</span></p>
-              ${_?`<p class="basket-main__list-price-piece_old">${p} <span>₴</span></p>`:""}
+              <p class="basket-main__list-price-piece_new">${s} <span>₴</span></p>
+              ${m?`<p class="basket-main__list-price-piece_old js-old-price" data-old-price="${d}">${d} <span>₴</span></p>`:""}
             </div>
 
             <div class="basket-main__list-amount-box">
@@ -57,11 +57,11 @@ import{K as g,u as k,h as x,m as C,c as S}from"../../assets/update-local-storage
               </svg>
             </div>
             <p class="list-price__price js-current-price" 
-            data-price="${e}">
-            ${e}<span> ₴</span>
+            data-price="${s}">
+            ${s}<span> ₴</span>
             </p>
           </div>
-        </li>`})}function h(){return`
+        </li>`})}function y(){return`
       <li
         class="basket-main__list-item_empty-basket list-item__empty-basket js-empty-basket-item">
         <h3 class="list-item__empty-basket-title">
@@ -73,5 +73,5 @@ import{K as g,u as k,h as x,m as C,c as S}from"../../assets/update-local-storage
           height="500"
           src="https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fempty-shopping-cart.webp?alt=media&token=3c262b31-1194-4d5e-9cc7-4c1f827f99a0"
           alt="#" />
-      </li>`}function $(){const r=document.querySelector(".js-basket-card-list"),o=document.querySelector(".js-title-shopping-list"),a=document.querySelector(".js-order-total-price"),d=document.querySelector(".js-goods-price"),_=document.querySelector(".js-discount-price");console.log(a.textContent);let e=JSON.parse(localStorage.getItem(g))??[];function p(t){t.length?(r.innerHTML=j(t).join(""),o.style.display="flex"):(r.innerHTML=h(),o.style.display="none")}p(e),r.addEventListener("click",b);function b({target:t,type:s}){t.classList.contains("js-remove-card")&&y(t),t.closest(".js-basket-btn-increment")?f(t):t.closest(".js-basket-btn-decrement")&&v(t)}function l(t){let s=0,i=0;t.forEach(n=>{s+=n.oldPrice,i+=n.price}),a.textContent=`${i} ₴`,d.textContent=`${s} ₴`,_.textContent=`${s-i} ₴`,console.log(a.textContent)}l(e);let u=parseInt(a.textContent);function f(t){const s=t.closest(".basket-main__list-item");let i=s.querySelector(".js-basket-amount"),n=s.querySelector(".js-current-price"),c=+i.textContent;const m=+n.dataset.price;c>=10||(i.textContent=c+=1,n.textContent=`${m*c} ₴`,a.textContent=`${u+=m} ₴`)}function v(t){const s=t.closest(".basket-main__list-item");let i=s.querySelector(".js-basket-amount"),n=s.querySelector(".js-current-price"),c=+i.textContent;const m=+n.dataset.price;c<=1||(i.textContent=c-=1,n.textContent=`${m*c} ₴`,a.textContent=`${u-=m} ₴`)}function y(t){const s=t.closest(".basket-main__list-item"),i=s.dataset.id;s.remove(),e=e.filter(({id:n})=>n!==i),localStorage.setItem(g,JSON.stringify(e)),k(),l(e),e.length||(r.innerHTML=h(),o.style.display="none")}window.addEventListener("storage",()=>{e=JSON.parse(localStorage.getItem(g))??[],k(),p(e),l(e)})}document.addEventListener("DOMContentLoaded",()=>{x(),C(),S(),$(),k()});
+      </li>`}function w(){const r=document.querySelector(".js-basket-card-list"),o=document.querySelector(".js-title-shopping-list"),l=document.querySelector(".js-order-total-price"),c=document.querySelector(".js-goods-price"),m=document.querySelector(".js-discount-price");let s=JSON.parse(localStorage.getItem(k))??[];function d(t){t.length?(r.innerHTML=q(t).join(""),o.style.display="flex"):(r.innerHTML=y(),o.style.display="none")}d(s),r.addEventListener("click",g);function g({target:t,type:e}){t.classList.contains("js-remove-card")&&S(t),t.closest(".js-basket-btn-increment")?v(t):t.closest(".js-basket-btn-decrement")&&j(t)}function p(t){let e=0,n=0;t.forEach(i=>{e+=i.oldPrice,n+=i.price}),l.textContent=`${n} ₴`,c.textContent=`${e} ₴`,m.textContent=`${e-n} ₴`}p(s);let _=parseInt(l.textContent);parseInt(m.textContent);let f=parseInt(c.textContent);function v(t){const e=t.closest(".basket-main__list-item");let n=e.querySelector(".js-basket-amount"),i=e.querySelector(".js-current-price"),b=e.querySelector(".js-old-price")?e.querySelector(".js-old-price").dataset.oldPrice:+i.dataset.price;console.log(b);let a=+n.textContent;const u=+i.dataset.price;a>=10||(n.textContent=a+=1,i.textContent=`${u*a} ₴`,l.textContent=`${_+=u} ₴`,c.textContent=`${f+=Number(b)} ₴`)}function j(t){const e=t.closest(".basket-main__list-item");let n=e.querySelector(".js-basket-amount"),i=e.querySelector(".js-current-price"),b=e.querySelector(".js-old-price")?e.querySelector(".js-old-price").dataset.oldPrice:+i.dataset.price,a=+n.textContent;const u=+i.dataset.price;a<=1||(n.textContent=a-=1,i.textContent=`${u*a} ₴`,l.textContent=`${_-=u} ₴`,c.textContent=`${f-=Number(b)} ₴`)}function S(t){const e=t.closest(".basket-main__list-item"),n=e.dataset.id;e.remove(),s=s.filter(({id:i})=>i!==n),localStorage.setItem(k,JSON.stringify(s)),h(),p(s),s.length||(r.innerHTML=y(),o.style.display="none")}window.addEventListener("storage",()=>{s=JSON.parse(localStorage.getItem(k))??[],h(),d(s),p(s)})}document.addEventListener("DOMContentLoaded",()=>{x(),C(),$(),w(),h()});
 //# sourceMappingURL=basket.js.map
