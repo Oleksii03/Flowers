@@ -1,8 +1,8 @@
-import{K as d,u as _,h as k,m as h,c as f}from"../../assets/update-local-storage-counter-CAwkdD6p.js";function v(c){return c.map((r,s)=>{const{id:o,discount:b,price:l,oldPrice:p,title:u,img:{png:t,webp:e}}=r;return`
-      <li class="basket-main__list-item" data-id="${o}">
+import{K as u,u as b,h as f,m as v,c as y}from"../../assets/update-local-storage-counter-CAwkdD6p.js";function S(a){return a.map((i,e)=>{const{id:n,discount:g,price:o,oldPrice:m,title:p,img:{png:t,webp:s}}=i;return`
+      <li class="basket-main__list-item" data-id="${n}">
           <picture class="basket-main__list-picture">
             <source
-              srcset="${e}"
+              srcset="${s}"
               type="image/webp" />
             <img
               class="basket-main__list-img"
@@ -13,11 +13,11 @@ import{K as d,u as _,h as k,m as h,c as f}from"../../assets/update-local-storage
           </picture>
 
           <div class="basket-main__list-info">
-            <h3 class="basket-main__list-title">${u}</h3>
+            <h3 class="basket-main__list-title">${p}</h3>
 
             <div class="basket-main__list-price-piece">
-              <p class="basket-main__list-price-piece_new">${l} <span>₴</span></p>
-              <p class="basket-main__list-price-piece_old">${p} <span>₴</span></p>
+              <p class="basket-main__list-price-piece_new">${o} <span>₴</span></p>
+              <p class="basket-main__list-price-piece_old">${m} <span>₴</span></p>
             </div>
 
             <div class="basket-main__list-amount-box">
@@ -57,11 +57,11 @@ import{K as d,u as _,h as k,m as h,c as f}from"../../assets/update-local-storage
               </svg>
             </div>
             <p class="list-price__price js-current-price" 
-            data-price="${l}">
-            ${l}<span> ₴</span>
+            data-price="${o}">
+            ${o}<span> ₴</span>
             </p>
           </div>
-        </li>`})}function g(){return`
+        </li>`})}function k(){return`
       <li
         class="basket-main__list-item_empty-basket list-item__empty-basket js-empty-basket-item">
         <h3 class="list-item__empty-basket-title">
@@ -73,5 +73,5 @@ import{K as d,u as _,h as k,m as h,c as f}from"../../assets/update-local-storage
           height="500"
           src="https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fempty-shopping-cart.webp?alt=media&token=3c262b31-1194-4d5e-9cc7-4c1f827f99a0"
           alt="#" />
-      </li>`}function y(){const c=document.querySelector(".js-basket-card-list"),r=document.querySelector(".js-title-shopping-list");let s=JSON.parse(localStorage.getItem(d))??[];console.log(s);function o(t){t.length?(c.innerHTML=v(t).join(""),r.style.display="flex"):(c.innerHTML=g(),r.style.display="none")}o(s),c.addEventListener("click",b);function b({target:t,type:e}){t.classList.contains("js-remove-card")&&u(t),t.closest(".js-basket-btn-increment")?l(t):t.closest(".js-basket-btn-decrement")&&p(t)}function l(t){const e=t.closest(".basket-main__list-item");let a=e.querySelector(".js-basket-amount"),n=e.querySelector(".js-current-price"),i=+a.textContent;const m=+n.dataset.price;console.log(i),console.log(m),!(i>=10)&&(a.textContent=i+=1,n.textContent=`${m*i} ₴`)}function p(t){const e=t.closest(".basket-main__list-item");let a=e.querySelector(".js-basket-amount"),n=e.querySelector(".js-current-price"),i=+a.textContent;const m=+n.dataset.price;i<=1||(a.textContent=i-=1,n.textContent=`${m*i} ₴`)}function u(t){const e=t.closest(".basket-main__list-item"),a=e.dataset.id;e.remove(),s=s.filter(({id:n})=>n!==a),localStorage.setItem(d,JSON.stringify(s)),_(),s.length||(c.innerHTML=g(),r.style.display="none")}window.addEventListener("storage",()=>{s=JSON.parse(localStorage.getItem(d))??[],_(),o(s)})}document.addEventListener("DOMContentLoaded",()=>{k(),h(),f(),y(),_()});
+      </li>`}const j=document.querySelector(".js-order-total-price"),x=document.querySelector(".js-goods-price"),C=document.querySelector(".js-discount-price");function _(a){let i=0,e=0;a.forEach(n=>{console.log(n),i+=n.oldPrice,e+=n.price}),j.textContent=`${e} ₴`,x.textContent=`${i} ₴`,C.textContent=`${i-e} ₴`}function w(){const a=document.querySelector(".js-basket-card-list"),i=document.querySelector(".js-title-shopping-list");let e=JSON.parse(localStorage.getItem(u))??[];_(e);function n(t){t.length?(a.innerHTML=S(t).join(""),i.style.display="flex"):(a.innerHTML=k(),i.style.display="none")}n(e),a.addEventListener("click",g);function g({target:t,type:s}){t.classList.contains("js-remove-card")&&p(t),t.closest(".js-basket-btn-increment")?o(t):t.closest(".js-basket-btn-decrement")&&m(t)}function o(t){const s=t.closest(".basket-main__list-item");let c=s.querySelector(".js-basket-amount"),r=s.querySelector(".js-current-price");const l=s.dataset.id;console.log(l);let d=+c.textContent;const h=+r.dataset.price;d>=10||(c.textContent=d+=1,r.textContent=`${h*d} ₴`)}function m(t){const s=t.closest(".basket-main__list-item");let c=s.querySelector(".js-basket-amount"),r=s.querySelector(".js-current-price"),l=+c.textContent;const d=+r.dataset.price;l<=1||(c.textContent=l-=1,r.textContent=`${d*l} ₴`)}function p(t){const s=t.closest(".basket-main__list-item"),c=s.dataset.id;s.remove(),e=e.filter(({id:r})=>r!==c),localStorage.setItem(u,JSON.stringify(e)),b(),_(e),e.length||(a.innerHTML=k(),i.style.display="none")}window.addEventListener("storage",()=>{e=JSON.parse(localStorage.getItem(u))??[],b(),n(e),_(e)})}document.addEventListener("DOMContentLoaded",()=>{f(),v(),y(),w(),b()});
 //# sourceMappingURL=basket.js.map
