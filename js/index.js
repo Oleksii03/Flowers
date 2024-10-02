@@ -1,5 +1,5 @@
-import{K as w,u as m,a as f,h as j,m as E,c as L}from"../assets/update-local-storage-counter-CAwkdD6p.js";import{S as d,P as x,A as $,G as P,N as q,g as h,a as k,c as S,i as F}from"../assets/vendor-ANkZcBYd.js";d.use([x,$,P,q]);function I(){return new d(".mainHeroSwiper",{autoplay:{delay:2e3,disableOnInteraction:!0},pagination:{el:".swiper-pagination"},speed:600})}function A(){const e=new d(".stock-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".stock__swiper-button-next",prevEl:".stock__swiper-button-prev"}});l(e),window.addEventListener("resize",()=>l(e))}function C(){const e=new d(".seasona-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".seasona__swiper-button-next",prevEl:".seasona__swiper-button-prev"}});l(e),window.addEventListener("resize",()=>l(e))}function O(){const e=new d(".present-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".present__swiper-button-next",prevEl:".present__swiper-button-prev"}});l(e),window.addEventListener("resize",()=>l(e))}function B(){return new d(".forum-swiper",{slidesPerView:"auto",spaceBetween:20,pagination:{el:".swiper-pagination"},speed:600})}function l(e){window.innerWidth<=425?(e.params.slidesPerView=2,e.params.spaceBetween=9):window.innerWidth>=1024?(e.params.spaceBetween=20,e.params.slidesPerView=4):e.params.slidesPerView="auto",e.update()}function N(e,t){const c=e.map(({id:a,discount:o,price:s,img:{png:i,webp:n},title:r})=>`
-          <div class="swiper-slide js-main-swiper-slide" data-id="${a}">
+import{K as g,a as f,u,h as S,m as y,c as j}from"../assets/update-local-storage-counter-CAwkdD6p.js";import{S as p,P as E,A as L,G as x,N as $,g as b,a as h,c as k,i as P}from"../assets/vendor-ANkZcBYd.js";p.use([E,L,x,$]);function q(){return new p(".mainHeroSwiper",{autoplay:{delay:2e3,disableOnInteraction:!0},pagination:{el:".swiper-pagination"},speed:600})}function F(){const e=new p(".stock-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".stock__swiper-button-next",prevEl:".stock__swiper-button-prev"}});d(e),window.addEventListener("resize",()=>d(e))}function I(){const e=new p(".seasona-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".seasona__swiper-button-next",prevEl:".seasona__swiper-button-prev"}});d(e),window.addEventListener("resize",()=>d(e))}function A(){const e=new p(".present-swiper",{slidesPerView:"auto",spaceBetween:9,grid:{rows:2,fill:"row"},pagination:{el:".swiper-pagination"},navigation:{nextEl:".present__swiper-button-next",prevEl:".present__swiper-button-prev"}});d(e),window.addEventListener("resize",()=>d(e))}function C(){return new p(".forum-swiper",{slidesPerView:"auto",spaceBetween:20,pagination:{el:".swiper-pagination"},speed:600})}function d(e){window.innerWidth<=425?(e.params.slidesPerView=2,e.params.spaceBetween=9):window.innerWidth>=1024?(e.params.spaceBetween=20,e.params.slidesPerView=4):e.params.slidesPerView="auto",e.update()}function O(e,t){const i=e.map(({id:r,discount:o,price:c,img:{png:s,webp:a},title:n})=>`
+          <div class="swiper-slide js-main-swiper-slide" data-id="${r}">
             <div class="main__slide-stock slide-stock">
               <div class="slide-stock__content-top">
                 <svg
@@ -13,15 +13,15 @@ import{K as w,u as m,a as f,h as j,m as E,c as L}from"../assets/update-local-sto
              
                   <picture>
                     <source 
-                      srcset=${n?`${n}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.webp?alt=media&token=76b2ee6e-35c7-4f93-855a-01e009d82bea"} type="image/webp" />
+                      srcset=${a?`${a}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.webp?alt=media&token=76b2ee6e-35c7-4f93-855a-01e009d82bea"} type="image/webp" />
 
                     <img 
                      loading="lazy"
                      width="450"
                      height="450"
                      class="slide-stock__content-top-img js-main-swiper-slide-img"
-                     src=${i?`${i}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.png?alt=media&token=f6fac92f-15df-4da5-a695-b57533957121"} alt="${r}"
-                     data-src="${n}" />
+                     src=${s?`${s}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.png?alt=media&token=f6fac92f-15df-4da5-a695-b57533957121"} alt="${n}"
+                     data-src="${a}" />
                   </picture>
 
                 <div class="slide-stock__content-top-logo">TOP</div>
@@ -74,18 +74,18 @@ import{K as w,u as m,a as f,h as j,m as E,c as L}from"../assets/update-local-sto
                 </ul>
 
                 <div class="slide-stock__content-bottom-price-box">
-                  <h5 class="slide-stock__content-bottom-title js-main-swiper-slide-title" title="${r}">
-                    <span></span> ${r}
+                  <h5 class="slide-stock__content-bottom-title js-main-swiper-slide-title" title="${n}">
+                    <span></span> ${n}
                   </h5>
 
                   <div class="slide-stock__content-bottom-price">
 
-                    ${o?`<div class="slide-stock__content-bottom-price-old js-main-swiper-slide-price-old"><span>${s}</span> грн</div>`:""}
+                    ${o?`<div class="slide-stock__content-bottom-price-old js-main-swiper-slide-price-old"><span>${c}</span> грн</div>`:""}
                     
                     <div class="slide-stock__content-bottom-price-new   
                       js-main-swiper-slide-price-new" 
                       data-discount="${o}">
-                      ${s*(1-o/100).toFixed(1)} грн
+                      ${c*(1-o/100).toFixed(1)} грн
                     </div>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ import{K as w,u as m,a as f,h as j,m as E,c as L}from"../assets/update-local-sto
                 </div>
               </div>
             </div>
-          </div>`);t.innerHTML=c.join("")}function V(e){const t=document.querySelector(".js-main-swiper-stock"),c=document.querySelector(".js-main-swiper-seasonal"),a=document.querySelector(".js-main-swiper-present"),o=["Stock","Seasonal","Present"],s=[t,c,a],i=h(e);async function n(r="",g=""){try{const p=await k(S(i,r)),_=[];p.forEach(v=>{_.push({id:v.id,...v.data()})}),N(_,g)}catch(p){return console.error("Error getting documents:",p),[]}}for(let r=0;r<o.length;r++){const g=o[r],p=s[r];n(g,p)}}function z(){const e=document.querySelector(".js-preloader");t();function t(){if(!localStorage.getItem("is-visit")){c();return}e.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze")}function c(){e.classList.add("preloader_visible"),document.body.classList.add("to-freeze"),setTimeout(()=>{e.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze"),localStorage.setItem("is-visit","true")},4e3)}}function T(){return F({apiKey:"AIzaSyCeoo8r7oEqKQs1O_YxVO2RAd8WWV3HWso",authDomain:"flowers-4b1a5.firebaseapp.com",projectId:"flowers-4b1a5",storageBucket:"flowers-4b1a5.appspot.com",messagingSenderId:"719757325067",appId:"1:719757325067:web:6e609ba7f0d37bdd23e80e"})}function D(e){const t=document.querySelector(".js-main-swiper-forum"),c=e.map(({title:a,description:o,img:{png:s,webp:i}})=>`
+          </div>`);t.innerHTML=i.join("")}function B(e){const t=document.querySelector(".js-main-swiper-stock"),i=document.querySelector(".js-main-swiper-seasonal"),r=document.querySelector(".js-main-swiper-present"),o=["Stock","Seasonal","Present"],c=[t,i,r],s=b(e);async function a(n="",l=""){try{const m=await h(k(s,n)),w=[];m.forEach(_=>{w.push({id:_.id,..._.data()})}),O(w,l)}catch(m){return console.error("Error getting documents:",m),[]}}for(let n=0;n<o.length;n++){const l=o[n],m=c[n];a(l,m)}}function N(){const e=document.querySelector(".js-preloader");t();function t(){if(!localStorage.getItem("is-visit")){i();return}e.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze")}function i(){e.classList.add("preloader_visible"),document.body.classList.add("to-freeze"),setTimeout(()=>{e.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze"),localStorage.setItem("is-visit","true")},4e3)}}function V(){return P({apiKey:"AIzaSyCeoo8r7oEqKQs1O_YxVO2RAd8WWV3HWso",authDomain:"flowers-4b1a5.firebaseapp.com",projectId:"flowers-4b1a5",storageBucket:"flowers-4b1a5.appspot.com",messagingSenderId:"719757325067",appId:"1:719757325067:web:6e609ba7f0d37bdd23e80e"})}function z(e){const t=document.querySelector(".js-main-swiper-forum"),i=e.map(({title:r,description:o,img:{png:c,webp:s}})=>`
       <div class="swiper-slide">
             <div class="main__slide-forum">
               <div class="main__slide-forum-picture-wrapper">
@@ -119,7 +119,7 @@ import{K as w,u as m,a as f,h as j,m as E,c as L}from"../assets/update-local-sto
                   <div class="main__slide-forum-img-overlay"></div>
                   <picture class="main__slide-forum-picture">
                     <source
-                      srcset=${i?`${i}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.webp?alt=media&token=89f10487-08e7-491f-8448-5998d2423abc"}
+                      srcset=${s?`${s}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.webp?alt=media&token=89f10487-08e7-491f-8448-5998d2423abc"}
                       type="image/webp" />
 
                     <img
@@ -127,17 +127,17 @@ import{K as w,u as m,a as f,h as j,m as E,c as L}from"../assets/update-local-sto
                       width="412"
                       height="343"
                       loading="lazy"
-                      src=${s?`${s}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.png?alt=media&token=69e0e0b2-fd05-421a-a13e-ce96a894acc6"}
-                      alt="${a}" />
+                      src=${c?`${c}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.png?alt=media&token=69e0e0b2-fd05-421a-a13e-ce96a894acc6"}
+                      alt="${r}" />
                   </picture>
                 </div>
               </div>
 
               <div class="main__slide-forum-text">
-                <p class="main__slide-forum-title">${a}</p>
+                <p class="main__slide-forum-title">${r}</p>
 
                 <p class="main__slide-forum-description">${o}</p>
               </div>
             </div>
-          </div>`);t.innerHTML=c.join("")}function J(e){const t=h(e);async function c(){try{const a=await k(S(t,"main-forum")),o=[];a.forEach(s=>{o.push({id:s.id,...s.data()})}),D(o)}catch(a){return console.error("Error getting documents:",a),[]}}c()}function b(e){const t=e.closest(".js-main-swiper-slide"),c=t.querySelector(".js-main-swiper-slide-title").textContent.trim(),a=t.querySelector(".js-main-swiper-slide-img").src,o=t.querySelector(".js-main-swiper-slide-img").dataset.src,s=t.querySelector(".js-main-swiper-slide-price-old")?t.querySelector(".js-main-swiper-slide-price-old").textContent.trim():0,i=t.querySelector(".js-main-swiper-slide-price-new").textContent.trim(),n=t.querySelector(".js-main-swiper-slide-price-new").dataset.discount;return{id:t.dataset.id,title:c,img:{png:a||"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.png?alt=media&token=f6fac92f-15df-4da5-a695-b57533957121",webp:o||"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.webp?alt=media&token=76b2ee6e-35c7-4f93-855a-01e009d82bea"},price:parseInt(i),oldPrice:parseInt(s),discount:Number(n)}}let u=JSON.parse(localStorage.getItem(w))??[];function y(){const e=document.querySelector(".js-main-container");let t=JSON.parse(localStorage.getItem(f))??[];e.addEventListener("click",c);function c({target:s}){s.classList.contains("js-basket")&&a(s),(s.classList.contains("js-favorite")||s.tagName==="use")&&o(s)}function a(s){const i=b(s);u.some(({id:r})=>r===i.id)||(u.push(i),localStorage.setItem(w,JSON.stringify(u)),m())}function o(s){let i=s.closest(".js-favorite");if(i)if(i.classList.contains("slide-stock__content-top-favorite_active")){i.classList.remove("slide-stock__content-top-favorite_active");const n=i.closest(".js-main-swiper-slide").dataset.id;t=t.filter(({id:r})=>r!==n),localStorage.setItem(f,JSON.stringify(t)),m()}else{i.classList.add("slide-stock__content-top-favorite_active");const n=b(s);t.push(n),localStorage.setItem(f,JSON.stringify(t)),m()}}m(),addEventListener("load",()=>{const s=document.querySelectorAll(".js-main-swiper-slide");t.forEach(({id:i})=>{[...s].forEach(n=>{n.dataset.id===i&&n.querySelector(".js-favorite").classList.add("slide-stock__content-top-favorite_active")})})})}window.addEventListener("storage",()=>{u=JSON.parse(localStorage.getItem(w))??[],m(),y()});document.addEventListener("DOMContentLoaded",()=>{let e=T();j(),E(),I(),V(e),A(),z(),C(),O(),B(),J(e),L(),y()});
+          </div>`);t.innerHTML=i.join("")}function T(e){const t=b(e);async function i(){try{const r=await h(k(t,"main-forum")),o=[];r.forEach(c=>{o.push({id:c.id,...c.data()})}),z(o)}catch(r){return console.error("Error getting documents:",r),[]}}i()}function v(e){const t=e.closest(".js-main-swiper-slide"),i=t.querySelector(".js-main-swiper-slide-title").textContent.trim(),r=t.querySelector(".js-main-swiper-slide-img").src,o=t.querySelector(".js-main-swiper-slide-img").dataset.src,c=t.querySelector(".js-main-swiper-slide-price-old")?t.querySelector(".js-main-swiper-slide-price-old").textContent.trim():0,s=t.querySelector(".js-main-swiper-slide-price-new").textContent.trim(),a=t.querySelector(".js-main-swiper-slide-price-new").dataset.discount;return{id:t.dataset.id,title:i,img:{png:r||"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.png?alt=media&token=f6fac92f-15df-4da5-a695-b57533957121",webp:o||"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-small-404.webp?alt=media&token=76b2ee6e-35c7-4f93-855a-01e009d82bea"},price:parseInt(s),oldPrice:parseInt(c),discount:Number(a)}}function D(){const e=document.querySelector(".js-main-container");let t=JSON.parse(localStorage.getItem(g))??[],i=JSON.parse(localStorage.getItem(f))??[];e.addEventListener("click",r);function r({target:s}){s.classList.contains("js-basket")&&o(s),(s.classList.contains("js-favorite")||s.tagName==="use")&&c(s)}function o(s){const a=v(s);t.some(({id:l})=>l===a.id)||(t.push(a),localStorage.setItem(g,JSON.stringify(t)),u())}function c(s){let a=s.closest(".js-favorite");if(a)if(a.classList.contains("slide-stock__content-top-favorite_active")){a.classList.remove("slide-stock__content-top-favorite_active");const n=a.closest(".js-main-swiper-slide").dataset.id;i=i.filter(({id:l})=>l!==n),localStorage.setItem(f,JSON.stringify(i)),u()}else{a.classList.add("slide-stock__content-top-favorite_active");const n=v(s);i.push(n),localStorage.setItem(f,JSON.stringify(i)),u()}}u(),addEventListener("load",()=>{const s=document.querySelectorAll(".js-main-swiper-slide");i.forEach(({id:a})=>{[...s].forEach(n=>{n.dataset.id===a&&n.querySelector(".js-favorite").classList.add("slide-stock__content-top-favorite_active")})})}),window.addEventListener("storage",()=>{t=JSON.parse(localStorage.getItem(g))??[],u()})}document.addEventListener("DOMContentLoaded",()=>{let e=V();S(),y(),q(),B(e),F(),N(),I(),A(),C(),T(e),j(),D()});
 //# sourceMappingURL=index.js.map
