@@ -1,23 +1,23 @@
-import{K as k,u as h,h as x,m as $,c as q}from"../../assets/update-local-storage-counter-CAwkdD6p.js";function w(r){return r.map((_,o)=>{const{id:c,discount:b,price:s,oldPrice:l,title:g,img:{png:d,webp:u}}=_;return`
-      <li class="basket-main__list-item" data-id="${c}">
+import{K as k,u as h,h as y,m as S,c as j}from"../../assets/update-local-storage-counter-CAwkdD6p.js";function $(l){return l.map((_,d)=>{const{id:a,discount:r,price:s,oldPrice:p,title:b,img:{png:u,webp:g}}=_;return`
+      <li class="basket-main__list-item" data-id="${a}">
           <picture class="basket-main__list-picture">
             <source
-              srcset="${u}"
+              srcset="${g}"
               type="image/webp" />
             <img
               class="basket-main__list-img"
               width="83"
               height="104"
-              src="${d}"
+              src="${u}"
               alt="#" />
           </picture>
 
           <div class="basket-main__list-info">
-            <h3 class="basket-main__list-title">${g}</h3>
+            <h3 class="basket-main__list-title">${b}</h3>
 
             <div class="basket-main__list-price-piece">
               <p class="basket-main__list-price-piece_new">${s} <span>₴</span></p>
-              ${b?`<p class="basket-main__list-price-piece_old js-old-price" data-old-price="${l}">${l} <span>₴</span></p>`:""}
+              ${r?`<p class="basket-main__list-price-piece_old js-old-price" data-old-price="${p}">${p} <span>₴</span></p>`:""}
             </div>
 
             <div class="basket-main__list-amount-box">
@@ -61,7 +61,7 @@ import{K as k,u as h,h as x,m as $,c as q}from"../../assets/update-local-storage
             ${s}<span> ₴</span>
             </p>
           </div>
-        </li>`})}function y(){return`
+        </li>`})}function v(){return`
       <li
         class="basket-main__list-item_empty-basket list-item__empty-basket js-empty-basket-item">
         <h3 class="list-item__empty-basket-title">
@@ -73,5 +73,5 @@ import{K as k,u as h,h as x,m as $,c as q}from"../../assets/update-local-storage
           height="500"
           src="https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fempty-shopping-cart.webp?alt=media&token=3c262b31-1194-4d5e-9cc7-4c1f827f99a0"
           alt="#" />
-      </li>`}function L(){const r=document.querySelector(".js-basket-card-list"),_=document.querySelector(".js-title-shopping-list"),o=document.querySelector(".js-order-total-price"),c=document.querySelector(".js-goods-price"),b=document.querySelector(".js-discount-price");let s=JSON.parse(localStorage.getItem(k))??[];function l(t){t.length?r.innerHTML=w(t).join(""):r.innerHTML=y()}l(s),r.addEventListener("click",g);function g({target:t,type:e}){t.classList.contains("js-remove-card")&&C(t),t.closest(".js-basket-btn-increment")?S(t):t.closest(".js-basket-btn-decrement")&&j(t)}function d(t){let e=0,n=0;t.forEach(i=>{e+=i.oldPrice,n+=i.price}),o.textContent=`${n} ₴`,c.textContent=`${e} ₴`,b.textContent=`${e-n} ₴`}d(s);let u=parseInt(o.textContent),f=parseInt(c.textContent);function S(t){const e=t.closest(".basket-main__list-item");let n=e.querySelector(".js-basket-amount"),i=e.querySelector(".js-current-price"),m=e.querySelector(".js-old-price")?e.querySelector(".js-old-price").dataset.oldPrice:+i.dataset.price;console.log(m);let a=+n.textContent;const p=+i.dataset.price;a>=10||(n.textContent=a+=1,i.textContent=`${p*a} ₴`,o.textContent=`${u+=p} ₴`,c.textContent=`${f+=Number(m)} ₴`)}function j(t){const e=t.closest(".basket-main__list-item");let n=e.querySelector(".js-basket-amount"),i=e.querySelector(".js-current-price"),m=e.querySelector(".js-old-price")?e.querySelector(".js-old-price").dataset.oldPrice:+i.dataset.price,a=+n.textContent;const p=+i.dataset.price;a<=1||(n.textContent=a-=1,i.textContent=`${p*a} ₴`,o.textContent=`${u-=p} ₴`,c.textContent=`${f-=Number(m)} ₴`)}function C(t){const e=t.closest(".basket-main__list-item"),n=e.dataset.id;e.remove(),s=s.filter(({id:i})=>i!==n),localStorage.setItem(k,JSON.stringify(s)),h(),d(s),v(),s.length||(r.innerHTML=y(),_.style.display="none")}window.addEventListener("storage",v);function v(){s=JSON.parse(localStorage.getItem(k))??[],h(),l(s),d(s)}}document.addEventListener("DOMContentLoaded",()=>{x(),$(),q(),L(),h()});
+      </li>`}function q(){const l=document.querySelector(".js-basket-card-list"),_=document.querySelector(".js-title-shopping-list"),d=document.querySelector(".js-order-total-price"),a=document.querySelector(".js-goods-price"),r=document.querySelector(".js-discount-price");let s=JSON.parse(localStorage.getItem(k))??[];function p(t){t.length?(l.innerHTML=$(t).join(""),_.classList.remove("basket-main__continue-shopping-list_hidden")):(l.innerHTML=v(),_.classList.add("basket-main__continue-shopping-list_hidden"))}p(s),l.addEventListener("click",b);function b({target:t,type:e}){t.classList.contains("js-remove-card")&&x(t),t.closest(".js-basket-btn-increment")?g(t):t.closest(".js-basket-btn-decrement")&&C(t)}function u(t){let e=0,n=0;t.forEach(i=>{e+=i.oldPrice,n+=i.price}),d.textContent=`${n} ₴`,a.textContent=`${e} ₴`,r.textContent=`${e-n} ₴`}u(s);function g(t){const e=t.closest(".basket-main__list-item");let n=e.querySelector(".js-basket-amount"),i=e.querySelector(".js-current-price"),m=e.querySelector(".js-old-price")?e.querySelector(".js-old-price").dataset.oldPrice:+i.dataset.price,c=+n.textContent;const o=+i.dataset.price;c>=10||(n.textContent=c+=1,i.textContent=`${o*c} ₴`,a.textContent=`${parseInt(a.textContent)+Number(m)} ₴`,d.textContent=`${parseInt(d.textContent)+o} ₴`,r.textContent=`${parseInt(r.textContent)+(Number(m)-o)} ₴`)}function C(t){const e=t.closest(".basket-main__list-item");let n=e.querySelector(".js-basket-amount"),i=e.querySelector(".js-current-price"),m=e.querySelector(".js-old-price")?e.querySelector(".js-old-price").dataset.oldPrice:+i.dataset.price,c=+n.textContent;const o=+i.dataset.price;c<=1||(n.textContent=c-=1,i.textContent=`${o*c} ₴`,a.textContent=`${parseInt(a.textContent)-Number(m)} ₴`,d.textContent=`${parseInt(d.textContent)-o} ₴`,r.textContent=`${parseInt(r.textContent)-(Number(m)-o)} ₴`)}function x(t){const e=t.closest(".basket-main__list-item"),n=e.dataset.id;e.remove(),s=s.filter(({id:i})=>i!==n),localStorage.setItem(k,JSON.stringify(s)),h(),u(s),f(),s.length||(l.innerHTML=v())}window.addEventListener("storage",f);function f(){s=JSON.parse(localStorage.getItem(k))??[],h(),p(s),u(s)}}document.addEventListener("DOMContentLoaded",()=>{y(),S(),j(),q(),h()});
 //# sourceMappingURL=basket.js.map
