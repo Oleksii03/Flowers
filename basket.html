@@ -15,6 +15,13 @@
   xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <symbol
+      id="clear-basket"
+      viewBox="0 0 24 24">
+      <path
+        d="M15.516 3.984h3.469v2.016h-13.969v-2.016h3.469l1.031-0.984h4.969zM8.438 11.859l2.156 2.156-2.109 2.109 1.406 1.406 2.109-2.109 2.109 2.109 1.406-1.406-2.109-2.109 2.109-2.156-1.406-1.406-2.109 2.156-2.109-2.156zM6 18.984v-12h12v12q0 0.797-0.609 1.406t-1.406 0.609h-7.969q-0.797 0-1.406-0.609t-0.609-1.406z"></path>
+    </symbol>
+
+    <symbol
       id="small-arrow-righ"
       viewBox="0 0 19 32">
       <path
@@ -393,7 +400,7 @@
     <link rel="modulepreload" crossorigin href="/Flowers/assets/vendor-CWWLBHNg.js">
     <link rel="modulepreload" crossorigin href="/Flowers/assets/mixins-BXRfE859.js">
     <link rel="stylesheet" crossorigin href="/Flowers/assets/vendor-BGkeTIC1.css">
-    <link rel="stylesheet" crossorigin href="/Flowers/assets/basket-C-8mD7M2.css">
+    <link rel="stylesheet" crossorigin href="/Flowers/assets/basket-BZBK54C_.css">
   </head>
 
   <body>
@@ -1192,6 +1199,14 @@
 
     <!-- main__content -->
     <div class="basket-main__content">
+      <button class="basket-main__content-remove-all js-remove-basket-all">
+        <svg
+          width="40"
+          height="40">
+          <use xlink:href="#clear-basket"></use>
+        </svg>
+      </button>
+
       <ul class="basket-main__list js-basket-card-list"></ul>
 
       <div class="basket-main__order js-order-box">
