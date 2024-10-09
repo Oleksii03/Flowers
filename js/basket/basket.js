@@ -1,4 +1,4 @@
-import{K as g,u as k,c as v,g as j,f as $,h as L,m as w,a as q,r as P,b as E,d as I}from"../../assets/modalFavorite-CZXRNz9c.js";import{g as T}from"../../assets/vendor-CWWLBHNg.js";function N(r){return r.map((u,o)=>{const{id:c,discount:l,price:n,oldPrice:e,title:m,img:{png:h,webp:_}}=u;return`
+import{K as g,u as k,c as v,g as j,f as $,h as L,m as w,a as q,r as P,b as E,d as I}from"../../assets/modalFavorite-5cPk3J1V.js";import{g as T}from"../../assets/vendor-CWWLBHNg.js";function N(r){return r.map((u,o)=>{const{id:c,discount:l,price:n,oldPrice:e,title:m,img:{png:h,webp:_}}=u;return`
       <li class="basket-main__list-item" data-id="${c}">
           <picture class="basket-main__list-picture">
             <source
