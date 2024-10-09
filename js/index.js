@@ -1,4 +1,4 @@
-import{g as v,K as m,e as u,i as f,u as d,c as p,f as S,h as _,m as w,j as y,s as b,k as h,p as L,l as k,a as j,b as E,d as F}from"../assets/modalFavorite-DZ9v3phM.js";import{g,a as q,c as I}from"../assets/vendor-CWWLBHNg.js";function C(s){const o=document.querySelector(".js-main-swiper-stock"),a=document.querySelector(".js-main-swiper-seasonal"),i=document.querySelector(".js-main-swiper-present"),r=["Stock","Seasonal","Present"],c=[o,a,i],e=g(s);for(let t=0;t<r.length;t++){const n=r[t],l=c[t];v(e,n,l)}}function O(){const s=document.querySelector(".js-preloader");o();function o(){if(!localStorage.getItem("is-visit")){a();return}s.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze")}function a(){s.classList.add("preloader_visible"),document.body.classList.add("to-freeze"),setTimeout(()=>{s.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze"),localStorage.setItem("is-visit","true")},4e3)}}function A(s){const o=document.querySelector(".js-main-swiper-forum"),a=s.map(({title:i,description:r,img:{png:c,webp:e}})=>`
+import{g as v,K as u,e as m,i as f,u as d,c as p,f as _,h as w,m as y,j as b,s as h,k as L,p as k,l as E,a as j,b as F,d as I}from"../assets/modalFavorite-CZXRNz9c.js";import{g,a as q,c as O}from"../assets/vendor-CWWLBHNg.js";function C(o){const s=document.querySelector(".js-main-swiper-stock"),e=document.querySelector(".js-main-swiper-seasonal"),r=document.querySelector(".js-main-swiper-present"),c=["Stock","Seasonal","Present"],n=[s,e,r],t=g(o);for(let a=0;a<c.length;a++){const i=c[a],l=n[a];v(t,i,l)}}function N(){const o=document.querySelector(".js-preloader");s();function s(){if(!localStorage.getItem("is-visit")){e();return}o.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze")}function e(){o.classList.add("preloader_visible"),document.body.classList.add("to-freeze"),setTimeout(()=>{o.classList.add("preloader_hidden"),document.body.classList.remove("to-freeze"),localStorage.setItem("is-visit","true")},4e3)}}function A(o){const s=document.querySelector(".js-main-swiper-forum"),e=o.map(({title:r,description:c,img:{png:n,webp:t}})=>`
       <div class="swiper-slide">
             <div class="main__slide-forum">
               <div class="main__slide-forum-picture-wrapper">
@@ -6,7 +6,7 @@ import{g as v,K as m,e as u,i as f,u as d,c as p,f as S,h as _,m as w,j as y,s a
                   <div class="main__slide-forum-img-overlay"></div>
                   <picture class="main__slide-forum-picture">
                     <source
-                      srcset=${e?`${e}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.webp?alt=media&token=89f10487-08e7-491f-8448-5998d2423abc"}
+                      srcset=${t?`${t}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.webp?alt=media&token=89f10487-08e7-491f-8448-5998d2423abc"}
                       type="image/webp" />
 
                     <img
@@ -14,17 +14,17 @@ import{g as v,K as m,e as u,i as f,u as d,c as p,f as S,h as _,m as w,j as y,s a
                       width="412"
                       height="343"
                       loading="lazy"
-                      src=${c?`${c}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.png?alt=media&token=69e0e0b2-fd05-421a-a13e-ce96a894acc6"}
-                      alt="${i}" />
+                      src=${n?`${n}`:"https://firebasestorage.googleapis.com/v0/b/flowers-4b1a5.appspot.com/o/pages%2F404%2Fplaceholder-404.png?alt=media&token=69e0e0b2-fd05-421a-a13e-ce96a894acc6"}
+                      alt="${r}" />
                   </picture>
                 </div>
               </div>
 
               <div class="main__slide-forum-text">
-                <p class="main__slide-forum-title">${i}</p>
+                <p class="main__slide-forum-title">${r}</p>
 
-                <p class="main__slide-forum-description">${r}</p>
+                <p class="main__slide-forum-description">${c}</p>
               </div>
             </div>
-          </div>`);o.innerHTML=a.join("")}function N(s){const o=g(s);async function a(){try{const i=await q(I(o,"main-forum")),r=[];i.forEach(c=>{r.push({id:c.id,...c.data()})}),A(r)}catch(i){return console.error("Error getting documents:",i),[]}}a()}function T(){const s=document.querySelector(".js-main-container");let o=JSON.parse(localStorage.getItem(m))??[],a=JSON.parse(localStorage.getItem(u))??[];s.addEventListener("click",i);function i({target:e}){e.classList.contains("js-basket")&&r(e),(e.classList.contains("js-favorite")||e.tagName==="use")&&c(e)}function r(e){const t=f(e);o.some(({id:l})=>l===t.id)||(o.push(t),localStorage.setItem(m,JSON.stringify(o)),d(),p())}function c(e){let t=e.closest(".js-favorite");if(t)if(t.classList.contains("slide-stock__content-top-favorite_active")){t.classList.remove("slide-stock__content-top-favorite_active");const n=t.closest(".js-main-swiper-slide").dataset.id;a=a.filter(({id:l})=>l!==n),localStorage.setItem(u,JSON.stringify(a)),d()}else{t.classList.add("slide-stock__content-top-favorite_active");const n=f(e);a.push(n),localStorage.setItem(u,JSON.stringify(a)),d()}}d(),addEventListener("load",()=>{const e=document.querySelectorAll(".js-main-swiper-slide");a.forEach(({id:t})=>{[...e].forEach(n=>{n.dataset.id===t&&n.querySelector(".js-favorite").classList.add("slide-stock__content-top-favorite_active")})})}),window.addEventListener("storage",()=>{o=JSON.parse(localStorage.getItem(m))??[],d(),p()})}document.addEventListener("DOMContentLoaded",()=>{let s=S();_(),w(),y(),C(s),b(),O(),h(),L(),k(),N(s),j(),T(),p(),E(),F()});
+          </div>`);s.innerHTML=e.join("")}function T(o){const s=g(o);async function e(){try{const r=await q(O(s,"main-forum")),c=[];r.forEach(n=>{c.push({id:n.id,...n.data()})}),A(c)}catch(r){return console.error("Error getting documents:",r),[]}}e()}function J(){const o=document.querySelector(".js-main-container");let s=JSON.parse(localStorage.getItem(u))??[],e=JSON.parse(localStorage.getItem(m))??[];o.addEventListener("click",r);function r({target:t}){t.classList.contains("js-basket")&&c(t),t.tagName==="use"&&n(t)}function c(t){const a=f(t);s.some(({id:l})=>l===a.id)||(s.push(a),localStorage.setItem(u,JSON.stringify(s)),d(),p())}function n(t){let a=t.closest(".js-favorite");if(a)if(e=JSON.parse(localStorage.getItem(m))??[],a.classList.contains("slide-stock__content-top-favorite_active")){a.classList.remove("slide-stock__content-top-favorite_active");const i=a.closest(".js-main-swiper-slide").dataset.id;e=e.filter(({id:l})=>l!==i),localStorage.setItem(m,JSON.stringify(e)),d()}else{a.classList.add("slide-stock__content-top-favorite_active");const i=f(t);if(e.some(({id:S})=>S===i.id))return;e.push(i),localStorage.setItem(m,JSON.stringify(e)),d()}}d(),addEventListener("load",()=>{const t=document.querySelectorAll(".js-main-swiper-slide");e.forEach(({id:a})=>{[...t].forEach(i=>{i.dataset.id===a&&i.querySelector(".js-favorite").classList.add("slide-stock__content-top-favorite_active")})})}),window.addEventListener("storage",()=>{s=JSON.parse(localStorage.getItem(u))??[],d(),p()})}document.addEventListener("DOMContentLoaded",()=>{let o=_();w(),y(),b(),C(o),h(),N(),L(),k(),E(),T(o),j(),J(),p(),F(),I()});
 //# sourceMappingURL=index.js.map
